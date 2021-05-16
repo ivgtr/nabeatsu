@@ -1,0 +1,30 @@
+{
+  "name": "null",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "aikatsu": "./lib/cli.js"
+  },
+  "license": "MIT",
+  "author": "ivgtr <gear.1112t.o@gmail.com> (https://github.com/ivgtr)",
+  "scripts": {
+    "start": "tsc -w",
+    "prebuild": "rimraf ./lib",
+    "build": "tsc -b tsconfig-build.json",
+    "dev": "ts-node --transpile-only ./src/index.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-sumikko": "^1.1.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "meow": "^10.0.0"
+  }
+}
