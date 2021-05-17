@@ -1,12 +1,18 @@
 {
-  "name": "null",
+  "name": "nabeatsu",
   "version": "0.0.1",
-  "description": "",
+  "description": "Nabeatsu of the world package",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "bin": {
-    "aikatsu": "./lib/cli.js"
+    "nabeatsu": "./lib/cli.js"
   },
+  "files": [
+    "lib",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "license": "MIT",
   "author": "ivgtr <gear.1112t.o@gmail.com> (https://github.com/ivgtr)",
   "scripts": {
