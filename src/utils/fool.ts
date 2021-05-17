@@ -19,24 +19,32 @@ export const fool = (count: number): string => {
           }
 
           if (index % 4 === 3) {
-            if (c === "3") {
-              tmpText += digit["3000"];
-            } else {
-              tmpText += digit["1000"];
+            if (c !== "0") {
+              if (c === "3") {
+                tmpText += digit["3000"];
+              } else {
+                tmpText += digit["1000"];
+              }
             }
           } else if (index % 4 === 2) {
-            if (c === "3") {
-              tmpText += digit["300"];
-            } else {
-              tmpText += digit["100"];
+            if (c !== "0") {
+              if (c === "3") {
+                tmpText += digit["300"];
+              } else {
+                tmpText += digit["100"];
+              }
             }
           } else if (index % 4 === 1) {
-            tmpText += digit["10"];
+            if (c !== "0") {
+              tmpText += digit["10"];
+            }
           } else if (index % 4 === 0) {
             if (c === "1") {
               tmpText += nabeatsu[c as Nabeatsu];
             }
-            tmpText += digit[`1${"0".repeat(index)}` as Digit];
+            if (c !== "0" || index / 4 >= 1) {
+              tmpText += digit[`1${"0".repeat(index)}` as Digit];
+            }
           }
 
           return tmpText;

@@ -9,7 +9,7 @@ describe("Check return", () => {
   });
 
   test("submit in 3", () => {
-    const ans = "ｼﾞｭｳﾏﾝｾﾝﾋｬｸｼﾞｭｳｻｧﾝwww";
+    const ans = "ｼﾞｭｳﾏﾝｻｧﾝwww";
     const result = nabeatsu(100003);
 
     expect(result).toBe(ans);
