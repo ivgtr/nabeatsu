@@ -27,10 +27,10 @@ $ nabeatsu --help
       $ nabeatsu [count]
 
     Examples
-      $ Nabeatsu 100000
+      $ nabeatsu 100000
       100000
 
-      $ Nabeatsu 2573169857
+      $ nabeatsu 2573169857
       ﾆｼﾞｭｳｺﾞｵｸﾅﾅｾﾝｻｧﾝﾋﾞｬｸｼﾞｭｳﾛｸﾏﾝｷｭｳｾﾝﾊﾁﾋｬｸｺﾞｼﾞｭｳﾅﾅwww
 
 ```
