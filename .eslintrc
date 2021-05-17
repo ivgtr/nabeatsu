@@ -4,5 +4,8 @@
     "eslint-config-sumikko/node",
     "eslint-config-sumikko/ts",
     "eslint-config-sumikko/prettier"
-  ]
+  ],
+  "rules": {
+    "node/shebang": 0
+  }
 }
