@@ -23,13 +23,13 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.14.2",
+    "@babel/core": "7.14.3",
     "@babel/preset-env": "7.14.2",
     "@babel/preset-typescript": "7.13.0",
     "@types/jest": "26.0.23",
     "@types/node": "15.3.0",
     "babel-jest": "26.6.3",
-    "eslint": "7.26.0",
+    "eslint": "7.27.0",
     "eslint-config-sumikko": "1.1.2",
     "jest": "26.6.3",
     "rimraf": "3.0.2",
