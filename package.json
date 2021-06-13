@@ -23,9 +23,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
-    "@babel/preset-env": "7.14.4",
-    "@babel/preset-typescript": "7.13.0",
+    "@babel/core": "7.14.5",
+    "@babel/preset-env": "7.14.5",
+    "@babel/preset-typescript": "7.14.5",
     "@types/jest": "26.0.23",
     "@types/node": "15.3.0",
     "babel-jest": "27.0.2",
