@@ -34,7 +34,7 @@
     "jest": "27.1.0",
     "rimraf": "3.0.2",
     "ts-node": "10.2.1",
-    "typescript": "4.4.2"
+    "typescript": "4.4.3"
   },
   "dependencies": {
     "meow": "9.0.0"
