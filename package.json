@@ -27,7 +27,7 @@
     "@babel/preset-env": "7.16.0",
     "@babel/preset-typescript": "7.16.0",
     "@types/jest": "27.0.2",
-    "@types/node": "15.3.0",
+    "@types/node": "16.11.6",
     "babel-jest": "27.3.1",
     "eslint": "7.26.0",
     "eslint-config-sumikko": "1.2.2",
