@@ -23,39 +23,57 @@ export const fool = (_count: string | number | BigInt): string => {
     countStr
       .split("")
       .map((c, index) => {
-        if (c === "3") tmp += 1;
+        // 3の個数をカウント
+        if (c === "3") threeCount += 1;
+
+        // テキストに変換するための変数
         let tmpText = "";
 
+        // 数値が1以外の場合、読む時に数字を含む
         if (c !== "1") {
           tmpText += nabeatsu[c as Nabeatsu];
         }
 
-        if (index % 4 === 3) {
+        // reverseした時のindex位置
+        const d = countStr.length - index - 1;
+
+        // 数値が0以外の場合、数字の後に小単位を付ける
+        if (d % 4 === 3) {
           if (c !== "0") {
+            flag = true;
             if (c === "3") {
               tmpText += digit["3000"];
             } else {
               tmpText += digit["1000"];
             }
           }
-        } else if (index % 4 === 2) {
+        } else if (d % 4 === 2) {
           if (c !== "0") {
+            flag = true;
+
             if (c === "3") {
               tmpText += digit["300"];
             } else {
               tmpText += digit["100"];
             }
           }
-        } else if (index % 4 === 1) {
+        } else if (d % 4 === 1) {
           if (c !== "0") {
+            flag = true;
             tmpText += digit["10"];
           }
-        } else if (index % 4 === 0) {
+        } else if (d % 4 === 0) {
           if (c === "1") {
             tmpText += nabeatsu[c as Nabeatsu];
           }
-          if (c !== "0" || index / 4 >= 1) {
-            tmpText += digit[`1${"0".repeat(index)}` as Digit];
+          if (index === 0) {
+            flag = true;
+          }
+          // 1の位の後には大単位が付く
+          // 同単位が0のみの場合は大単位を付けない
+          if (flag && d / 4 >= 1) {
+            tmpText += digit[`1${"0".repeat(d)}` as Digit];
+            flag = false;
           }
         }
 
