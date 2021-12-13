@@ -27,17 +27,21 @@
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.0",
+    "@babel/preset-env": "7.16.4",
     "@babel/preset-typescript": "7.16.0",
-    "@types/jest": "27.0.2",
-    "@types/node": "16.11.6",
-    "babel-jest": "27.3.1",
-    "eslint": "7.26.0",
-    "eslint-config-sumikko": "1.2.2",
-    "jest": "27.3.1",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.12",
+    "@typescript-eslint/eslint-plugin": "5.6.0",
+    "@typescript-eslint/parser": "5.6.0",
+    "babel-jest": "27.4.4",
+    "eslint": "8.4.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "prettier": "2.5.1",
+    "jest": "27.4.4",
     "rimraf": "3.0.2",
     "ts-node": "10.4.0",
-    "typescript": "4.4.4"
+    "typescript": "4.5.3"
   },
   "dependencies": {
     "meow": "9.0.0"
