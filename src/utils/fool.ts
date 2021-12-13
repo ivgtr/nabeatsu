@@ -1,16 +1,27 @@
 import { digit, nabeatsu } from "./config/nabeatsu";
 
-export const fool = (_count: string | number): string => {
-  const count = BigInt(_count);
-  if (!(count % 3n === 0n || count.toString().match("3"))) {
-    return count.toString();
+const isFool = (c: string): boolean => {
+  const countSum = c.split("").reduce((acc, cur) => acc + (Number(cur) % 3), 0) % 3;
+
+  if (countSum === 0 || c.match("3")) {
+    return true;
+  } else {
+    return false;
   }
-  let tmp = 0;
+};
+
+export const fool = (_count: string | number | BigInt): string => {
+  const countStr = _count.toString();
+
+  if (!isFool(countStr)) {
+    return countStr;
+  }
+  let threeCount = 0;
+  let flag = false;
+
   return (
-    count
-      .toString()
+    countStr
       .split("")
-      .reverse()
       .map((c, index) => {
         if (c === "3") tmp += 1;
         let tmpText = "";
@@ -50,7 +61,6 @@ export const fool = (_count: string | number): string => {
 
         return tmpText;
       })
-      .reverse()
-      .join("") + "www".repeat(tmp)
+      .join("") + "www".repeat(threeCount)
   );
 };
