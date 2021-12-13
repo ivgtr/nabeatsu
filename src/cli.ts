@@ -18,6 +18,6 @@ Examples
 
   const { input } = cli;
   if (input.length) {
-    console.log(Nabeatsu(Number(input[0])));
+    console.log(Nabeatsu(input[0]));
   }
 })();
