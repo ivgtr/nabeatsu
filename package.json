@@ -22,6 +22,9 @@
     "dev": "ts-node --transpile-only ./src/cli.ts",
     "test": "jest"
   },
+  "engines": {
+    "node": ">=10.4.0"
+  },
   "devDependencies": {
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.0",
