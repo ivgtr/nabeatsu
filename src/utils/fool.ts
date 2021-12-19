@@ -1,14 +1,6 @@
 import { digit, nabeatsu } from "./config/nabeatsu";
 
-const isFool = (c: string): boolean => {
-  const countSum = c.split("").reduce((acc, cur) => acc + (Number(cur) % 3), 0) % 3;
-
-  if (countSum === 0 || c.match("3")) {
-    return true;
-  } else {
-    return false;
-  }
-};
+const isFool = (c: string): boolean => BigInt(c) % 3n === 0n || c.split("").some(val => val === "3")
 
 export const fool = (_count: string | number | BigInt): string => {
   const countStr = _count.toString();
