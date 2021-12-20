@@ -63,4 +63,14 @@ describe("Check return", () => {
 
     expect(result).toBe(ans);
   });
+
+  // これ以上の桁数は今の所考慮していない
+  test("限界値ギリギリで、3が入っている文字列(無量大数)", () => {
+    const ans = "ｾﾝﾑﾘｮｳﾀｲｽｳｻｧﾝwww";
+    const result = nabeatsu(
+      "100000000000000000000000000000000000000000000000000000000000000000000003"
+    );
+
+    expect(result).toBe(ans);
+  });
 });
