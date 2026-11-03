@@ -22,6 +22,7 @@ jobs:
         run: |
           npm ci
           npm test
+          npm run lint
       - name: Build
         run: npm run build
       - name: Publish
